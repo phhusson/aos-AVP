@@ -160,7 +160,7 @@ native_clean_$(1):
 endef
 
 all: AVP/android-ndk
-	cd Video; ANDROID_HOME=$(android_sdk) ANDROID_NDK_HOME=$(android_ndk) ./gradlew aCLND
+	cd Video; ANDROID_HOME=$(android_sdk) ANDROID_NDK_HOME=$(android_ndk) ./gradlew assembleCommunityLeanbackNoamazonDebug
 
 AVP/android-ndk:
 	echo "downloading android ndk..."
